@@ -8,11 +8,19 @@
   border-radius: 10px;
   margin-bottom: 1rem;
 }
+.email {
+  color: #0865cd;
+}
 
 .cell {
   text-align: left;
   border-right: 1px solid #eee;
   padding: 0 15px;
+  font-weight: 600;
+}
+
+.cell sub {
+  font-weight: 500;
 }
 
 .cell sub {
@@ -20,4 +28,30 @@
   font-size: 0.8rem;
   color: #999;
   margin-bottom: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .SingleApplication {
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+  }
+
+  .cell {
+    padding: 10px 15px;
+  }
+
+  .cell sub {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .SingleApplication {
+    grid-template-columns: 1fr;
+  }
+
+  .cell {
+    padding: 10px;
+  }
 }
